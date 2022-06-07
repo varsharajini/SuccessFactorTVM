@@ -5,7 +5,7 @@
       <div class="card-body">
          <h5 class="card-title">EMS</h5>
          <p class="card-text">
-         <div>
+         <!-- <div>
             User Role <span style="color:#FF0000">*</span>
             <br>
             <select style="width:43%;">
@@ -23,10 +23,23 @@
             <button  class="btn-aspen-orange">
                Login
             </button>
-         </div>
+         </div> -->
+         <form [formGroup] ="loginform" (ngSubmit)="onSubmit()">
+
+           <input type="text" placeholder="name" formontrolName="username">
+           <div *ngIf="loginform.get('username').errors">
+             <span *ngIf="loginform.get('username').error['minlength']">Minimum length is 5</span>
+             <span *ngIf="loginform.get('username').touched && loginform.get('username').error['required']">This fiel is required</span>
+             </div>
+           <input type="password" placeholder="password" formControlName="password">
+           <div *ngIf="loginform.get('password').errors">
+            <span *ngIf="loginform.get('password').error['minlength']">Minimum length is 5</span>
+            <span *ngIf="loginform.get('password').touched && loginform.get('username').error['required']">This fiel is required</span>
+           <button (click)="submit()" [disabled]="!loginform.value"></button>
+           </div>
          <br>
-      </div>
+      </form>
    </div>
-</div>
+
  <div>
 </div>
