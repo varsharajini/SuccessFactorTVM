@@ -1,0 +1,32 @@
+
+<div align="center">
+   <div class="card border-dark  " style="width: 40rem;">
+      <div class="card-header text-white btn-aspen-black">EMS Login</div>
+      <div class="card-body">
+         <h5 class="card-title">EMS</h5>
+         <p class="card-text">
+         <div>
+            User Role <span style="color:#FF0000">*</span>
+            <br>
+            <select style="width:43%;">
+               <option value="">Select Role</option>
+               <option *ngFor="let designation of userRoleList">{{designation}}</option>
+             </select>
+            <br><br>
+            Admin/User Id <span style="color:#FF0000">*</span>
+            <br> <input type="text" name="userId"  >
+            <br>
+            Password <span style="color:#FF0000">*</span>
+            <br><input type="password" name="password" >
+            <br>
+            <br>
+            <button  class="btn-aspen-orange">
+               Login
+            </button>
+         </div>
+         <br>
+      </div>
+   </div>
+</div>
+ <div>
+</div>
