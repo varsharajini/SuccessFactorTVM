@@ -1,11 +1,10 @@
-
 <div align="center">
    <div class="card border-dark  " style="width: 40rem;">
-      <div class="card-header text-white btn-aspen-black">EMS Login</div>
+      <!-- <div class="card-header text-white btn-aspen-black">EMS Login</div> -->
       <div class="card-body">
-         <h5 class="card-title">EMS</h5>
+         <h5 class="card-title"></h5>
          <p class="card-text">
-         <!-- <div>
+            <!-- <div>
             User Role <span style="color:#FF0000">*</span>
             <br>
             <select style="width:43%;">
@@ -24,22 +23,26 @@
                Login
             </button>
          </div> -->
-         <form [formGroup] ="loginform" (ngSubmit)="onSubmit()">
+         <form class="margin" [formGroup]="loginform">
+            <h1 id="setid">TVM let's Begin</h1>
+            <p id="setid">EMS Login</p>
 
-           <input type="text" placeholder="name" formontrolName="username">
-           <div *ngIf="loginform.get('username').errors">
-             <span *ngIf="loginform.get('username').error['minlength']">Minimum length is 5</span>
-             <span *ngIf="loginform.get('username').touched && loginform.get('username').error['required']">This fiel is required</span>
-             </div>
-           <input type="password" placeholder="password" formControlName="password">
-           <div *ngIf="loginform.get('password').errors">
-            <span *ngIf="loginform.get('password').error['minlength']">Minimum length is 5</span>
-            <span *ngIf="loginform.get('password').touched && loginform.get('username').error['required']">This fiel is required</span>
-           <button (click)="submit()" [disabled]="!loginform.value"></button>
-           </div>
-         <br>
-      </form>
-   </div>
+            <input type="text" placeholder="name" formontrolName="username"><br><br>
+            <div *ngIf="loginform.get('username').errors">
+               <span *ngIf="loginform.get('username').error['minlength']">Minimum length is 5</span>
+               <span *ngIf="loginform.get('username').touched && loginform.get('username').error['required']">This fiel
+                  is required</span>
+            </div>
+            <input type="password" placeholder="password" formControlName="password"><br><br>
+            <div *ngIf="loginform.get('password').errors">
+               <span *ngIf="loginform.get('password').error['minlength']">Minimum length is 5</span>
+               <span *ngIf="loginform.get('password').touched && loginform.get('username').error['required']">This fiel
+                  is required</span>
+               <button (click)="submit()">submit</button>
+            </div>
+            <br>
+         </form>
+      </div>
 
- <div>
-</div>
+      <div>
+      </div>

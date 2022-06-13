@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+       "id": 1,
+       "Name":"dorcas",
+       "Designation":"software dev",
+       "Age":"21"
+        },
+        {
+            "id": 2,
+            "Name":"winsiya",
+            "Designation":"tester",
+            "Age":"24"
+        },
+        {
+            "id": 3,
+            "Name":"grace",
+            "Designation":"HR",
+            "Age":"20"
+        },
+        {
+            "id": 4,
+            "Name":"josh",
+            "Designation":"tester",
+            "Age":"21"
+        }
+    ]
+}

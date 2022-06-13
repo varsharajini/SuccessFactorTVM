@@ -1,0 +1,56 @@
+ 
+.dropdown-item{
+    position: relative;
+    
+
+}
+.card{
+    background-color: aqua;
+    text-align: center;
+    margin: top 10px;
+    border:  px solid rgb(165, 65, 42);
+    width: 650px;
+    padding: 25px;
+    position: relative;
+    top:30x;
+    left: 100px;
+
+    img {
+        border-radius: 8px;
+      }
+      p.dotted {border-style: dotted;}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color:greenyellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:rgb(237, 100, 230);
+  }
+  
+  
+  li a:hover {
+    background-color:darkblue;
+  }
+  .object{
+      background-color: rgb(255, 187, 0);
+
+  }
+
+  .flex{
+    display: flex;
+  }
+  .imgname{
+    border-radius: 100px;
+  }

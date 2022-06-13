@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginform:any =FormGroup;
-  constructor() { }
+  constructor(private rout:Router) { }
 
   ngOnInit() {
     this.loginform = new FormGroup({
@@ -19,8 +20,6 @@ export class LoginComponent implements OnInit {
   submit(){
 if(this.loginform.valid)
 console.log(this.loginform.value);
-  }
-  onSubmit(){
-
+this.rout.navigate(['/success']);
   }
 }
